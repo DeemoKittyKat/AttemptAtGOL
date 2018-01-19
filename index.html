@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Game of Life Attempt</title>
+  <style>
+    body {
+      background-color: #ddd;
+    }
+    
+    #header {
+      padding: 10px 10px 10px 10px;
+      border-style: groove;
+      border-radius: 15px;
+      background-color: #eee;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #game.script {
+      margin: 10px 10px 10px 10px;
+      padding: 10px 10px 10px 10px;
+      border-style: dashed;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    
+    #instruct{
+      border-style: groove;
+      border-radius: 15px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="header" id="header">
+    <h1>Game of Life</h1>
+  </div>
+  
+  <div class="game" id="game">
+    <script src="p5.js"></script>
+    <script src="Cell.js"></script>
+    <script class="game" src="sketch.js"></script>
+  </div>
+  
+  <div id="instruct">
+    <h3>How to use</h3>
+    <p>Press any key to run the simulation.</p>
+    <p>Click on the cells to change their states.</p>
+  </div>
+</body>
+
+</html>
